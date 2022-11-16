@@ -4,8 +4,8 @@ import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 
-const name = 'Your Name'
-export const siteTitle = 'Next.js Sample Website'
+const name = 'Mogy'
+export const siteTitle = 'Mogylog'
 
 export default function Layout({ children, home }) {
     return (
@@ -14,7 +14,7 @@ export default function Layout({ children, home }) {
                 <link rel="icon" href="/favicon.ico" />
                 <meta
                     name="description"
-                    content="Learn how to build a personal website using Next.js"
+                    content="Mogy's blog on Next.js"
                 />
                 <meta
                     property="og:image"
@@ -32,8 +32,8 @@ export default function Layout({ children, home }) {
                             priority
                             src="/images/profile.png"
                             className={utilStyles.borderCircle}
-                            height={144}
-                            width={144}
+                            height={100}
+                            width={100}
                             alt={name}
                         />
                         <h1 className={utilStyles.heading2Xl}>{name}</h1>
@@ -69,7 +69,7 @@ export default function Layout({ children, home }) {
             ) :(
                 <div className={styles.backToHome}>
                     <Link href="/">
-                        <p>← Back to home</p>
+                        <p className={utilStyles.backToHome}>← Back to home</p>
                     </Link>
                 </div>
             )}

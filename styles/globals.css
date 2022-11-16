@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap');
+
 html,
 body {
     padding: 0;
@@ -6,6 +8,8 @@ body {
         Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     line-height: 1.6;
     font-size: 18px;
+    background-color: #ebf5ff;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
 }
 
 * {
@@ -13,13 +17,9 @@ body {
 }
 
 a {
-    color: #0070f3;
     text-decoration: none;
 }
 
-a:hover {
-    text-decoration: underline;
-}
 
 img {
     max-width: 100%;
